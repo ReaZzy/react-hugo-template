@@ -1,0 +1,9 @@
+---
+title: "React-Hugo"
+date: 2022-02-02T16:30:23+02:00
+draft: true
+---
+
+{{<rawhtml>}}
+<component id="App"></component>
+{{</rawhtml>}}
