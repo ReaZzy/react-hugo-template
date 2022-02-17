@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React-Hugo with tailwind and typescript support",
   "scripts": {
-    "start": "hugo serve -D --disableFastRender",
+    "start": "hugo -D --destination ./public && serve public",
     "start:dev": "cross-env NODE-ENV=development concurrently \"webpack --mode=development --watch\" \"hugo serve -D --disableFastRender\"",
     "start:debug": "webpack --mode=development --watch && hugo serve -D --debug",
     "build": "cross-env NODE-ENV=production webpack --mode=production && hugo"

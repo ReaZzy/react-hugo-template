@@ -1,6 +1,6 @@
 # Getting Started with React Hugo
 
-![react-hugo](static/images/react-hugo.png)
+![react-hugo](static/images/react-hugo.webp)
 
 ## Introduction
 
