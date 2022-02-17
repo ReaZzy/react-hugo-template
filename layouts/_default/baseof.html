@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" class="dark h-full">
+  {{- partial "head.html" . -}}
+  <body class="h-full">
+    <div id="content">
+     {{- block "main" . }}{{- end }}
+    </div>
+    {{- $pathWithoutExtension := (printf "%s%s" "assets/" "bundle.js") -}} {{-
+    if (fileExists (printf "%s%s" "static/" $pathWithoutExtension)) -}}
+    <script src="{{ $pathWithoutExtension | absURL }}"></script>
+    {{- end -}}
+  </body>
+</html>

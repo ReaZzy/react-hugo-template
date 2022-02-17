@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/prop-types": 0,
+    "react/function-component-definition": 0,
+    "arrow-body-style": 1
+  },
+  "ignorePatterns": ["webpack.config.js", "tailwind.config.js", "assets/css/postcss.config.js"],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
+      "parserOptions": {
+        "project": [
+          "./tsconfig.json"
+        ]
+      }
+    }
+  ]
+}

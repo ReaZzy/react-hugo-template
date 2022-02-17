@@ -1,6 +1,9 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = 'congo'
-[security.exec]
-    allow = ['babel$','^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+languageCode = "ru-ru"
+title = "Крыша: Сервис страхования"
+summaryLength = 15
+paginate = 2
+
+
+[build]
+  writeStats = true
