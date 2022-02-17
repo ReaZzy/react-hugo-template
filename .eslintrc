@@ -15,7 +15,7 @@
     "react/function-component-definition": 0,
     "arrow-body-style": 1
   },
-  "ignorePatterns": ["webpack.config.js", "tailwind.config.js", "assets/css/postcss.config.js"],
+  "ignorePatterns": ["webpack.config.ts", "tailwind.config.ts", "assets/css/postcss.config.ts"],
   "overrides": [
     {
       "files": [

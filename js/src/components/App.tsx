@@ -11,12 +11,12 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className='text-5xl font-extrabold text-blue-500 my-10 flex flex-col gap-10 items-center'>
+    <div className='text-3xl lg:text-5xl font-extrabold text-blue-500 gap-10 my-10 flex flex-col items-center'>
       &#10094; React Component &#10095;
       <button type='button' onClick={handleDecrement} className='outline-none'>
         -
       </button>
-      <div className='font-extrabold text-3xl'>{counter}</div>
+      <div className='font-extrabold text-2xl lg:text-3xl'>{counter}</div>
       <button type='button' onClick={handleIncrement} className='outline-none'>
         +
       </button>
