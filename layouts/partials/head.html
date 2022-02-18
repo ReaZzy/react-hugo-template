@@ -1,7 +1,12 @@
 <head>
   {{ $styles := resources.Get "css/styles.css" | toCSS | postCSS (dict "config"
-  "./assets/css/postcss.config.ts") | resources.Fingerprint "sha512" }} {{ if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous"/>
+  "./assets/css/postcss.config.ts") }} {{ if .Site.IsServer }}
+  <link
+    rel="stylesheet"
+    href="{{ $styles.RelPermalink }}"
+    integrity="{{ $styles.Data.Integrity }}"
+    crossorigin="anonymous"
+  />
   {{ else }} {{ $styles := $styles | minify | fingerprint |
   resources.PostProcess }}
   <link
@@ -16,10 +21,7 @@
     content="width=device-width, initial-scale=1, shrink-to-fit=no"
   />
   <meta name="description" content="{{.Summary}}" />
-  <meta
-    property="og:title"
-    content='{{default "Title" (.Title)}}'
-  />
+  <meta property="og:title" content='{{default "Title" (.Title)}}' />
   <meta property="og:description" content="{{.Summary}}" />
   <meta
     property="og:image"

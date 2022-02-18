@@ -18,5 +18,5 @@ module.exports = {
       path: [themeDir],
     }),
   ],
-  ...(process.env.NODE_ENV === 'production' ? purgecss : {}),
+  ...(process.env.NODE_ENV === 'production' ? { purgecss } : {}),
 };
