@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" class="dark h-full">
+<html lang="{{ .Site.LanguageCode }}" class="h-full">
   {{- partial "head.html" . -}}
   <body class="h-full">
     <div id="content">{{- block "main" . }}{{- end }}</div>
-    <div id="root"></div>
+    <div
+      id="root"
+      class="{{if .Params.isHugoPage}}hugo-page {{else}} h-full {{end}}"
+    ></div>
     {{- $pathWithoutExtension := (printf "%s%s" "assets/" "bundle.js") -}} {{-
     if (fileExists (printf "%s%s" "static/" $pathWithoutExtension)) -}}
     <script src="{{$pathWithoutExtension | absURL}}"></script>
