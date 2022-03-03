@@ -10,6 +10,7 @@ Simple react-hugo template with typescript and tailwindcss for your gorgeous pro
 
 > ### Develop
 > ```npm install```\
+> ```npm run build```
 > ```npm run start:dev```
 >
 > ### Production
