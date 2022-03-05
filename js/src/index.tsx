@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access */
-
 import ReactDOM from 'react-dom';
 import React, { ReactPortal, useCallback, useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
